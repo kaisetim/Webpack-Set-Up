@@ -8,7 +8,8 @@ module.exports = {
         helpers: true,
         regenerator: true,
         useESModules: false
-      }
+      },
+      "@babel/plugin-transform-class-properties"
     ]
   ]
 };

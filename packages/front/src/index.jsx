@@ -1,8 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-import { TestCom } from "./components/testCom/testCom.jsx";
+import { TestComponent } from "./components/testComponent/testComponent.jsx";
 
-document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(<TestCom />, document.getElementById("container"));
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   render(<TestComponent />, document.getElementById("container"));
+// });
+
+const testComponent = document.createElement("div");
+testComponent.setAttribute("id", "test");
+
+document.querySelector("#content").appendChild(testComponent);
